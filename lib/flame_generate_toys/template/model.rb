@@ -4,16 +4,16 @@ module FlameGenerateToys
 	class Template
 		## Define toys for form generation
 		class Model < Base
-			on_expand do
+			on_expand do |template|
 				tool :model do
 					desc 'Generate model'
 
+					include CommonGeneratorsCode
+
 					required_arg :name
 
-					def run
-						require_relative 'base_generator'
-
-						BaseGenerator.new(:model, name, @namespace).write
+					to_run do
+						initialize_generator(:model, template.namespace).write
 					end
 				end
 			end

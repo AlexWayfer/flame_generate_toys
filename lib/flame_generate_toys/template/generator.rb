@@ -1,15 +1,16 @@
 # frozen_string_literal: true
 
+require 'erb'
 require 'gorilla_patch/inflections'
 
 module FlameGenerateToys
 	class Template
-		## Class for common code of generation
-		class BaseGenerator
+		## Class for code generation
+		class Generator
 			class << self
 				def template(type)
 					(@templates ||= {})[type] ||=
-						ERB.new File.read "#{__dir__}/../#{type}/template.rb.erb"
+						ERB.new File.read "#{__dir__}/#{type}/template.rb.erb"
 				end
 			end
 
@@ -17,7 +18,7 @@ module FlameGenerateToys
 
 			using GorillaPatch::Inflections.from_dry_inflector
 
-			def initialize(type, name, namespace)
+			def initialize(type, name, namespace, context_directory)
 				@template = self.class.template(type)
 
 				@camelized_name = name.camelize
@@ -36,6 +37,7 @@ module FlameGenerateToys
 				FileUtils.mkdir_p File.dirname @file_path
 				File.write @file_path, @template.result_with_hash(
 					camelized_name: camelized_name,
+					namespace: @namespace,
 					**locals
 				)
 

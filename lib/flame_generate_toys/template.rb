@@ -13,13 +13,15 @@ module FlameGenerateToys
 			@namespace = namespace
 		end
 
-		on_expand do
+		on_expand do |template|
 			tool :generate do
+				require_relative 'template/_base'
+
 				require_relative 'template/form'
-				expand Template::Form, namespace: namespace
+				expand Template::Form, namespace: template.namespace
 
 				require_relative 'template/model'
-				expand Template::Model, namespace: namespace
+				expand Template::Model, namespace: template.namespace
 			end
 
 			alias_tool :g, :generate

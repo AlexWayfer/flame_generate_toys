@@ -4,16 +4,18 @@ module FlameGenerateToys
 	class Template
 		## Define toys for form generation
 		class Form < Base
-			on_expand do
+			on_expand do |template|
 				tool :form do
 					desc 'Generate form'
 
+					include CommonGeneratorsCode
+
 					required_arg :name
 
-					def run
-						require_relative 'base_generator'
+					to_run do
+						require "#{context_directory}/forms/_base"
 
-						generator = BaseGenerator.new(:form, name, @namespace)
+						generator = initialize_generator :form, template.namespace
 
 						*modules, class_name = generator.camelized_name.split('::')
 
@@ -21,19 +23,14 @@ module FlameGenerateToys
 							modules: modules,
 							class_name: class_name,
 							class_indentation: "\t" * modules.size,
-							parent_form:
-								model_forms.include?(class_name) ? class_name : 'Base'
+							parent_form: parent_form(class_name)
 						)
 					end
 
 					private
 
-					using GorillaPatch::Inflections
-
-					def model_forms
-						Dir["#{context_directory}/forms/_model/*.rb"].map do |file|
-							File.basename(file, '.rb').sub(/^_/, '').camelize
-						end
+					def parent_form(class_name)
+						Formalism::ModelForms.const_defined?(class_name, false) ? class_name : 'Base'
 					end
 				end
 			end
