@@ -1,5 +1,13 @@
 # Flame Generate Toys
 
+[![Cirrus CI - Base Branch Build Status](https://img.shields.io/cirrus/github/AlexWayfer/flame_generate_toys?style=flat-square)](https://cirrus-ci.com/github/AlexWayfer/flame_generate_toys)
+[![Codecov branch](https://img.shields.io/codecov/c/github/AlexWayfer/flame_generate_toys/master.svg?style=flat-square)](https://codecov.io/gh/AlexWayfer/flame_generate_toys)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/AlexWayfer/flame_generate_toys.svg?style=flat-square)](https://codeclimate.com/github/AlexWayfer/flame_generate_toys)
+[![Depfu](https://img.shields.io/depfu/AlexWayfer/benchmark_toys?style=flat-square)](https://depfu.com/repos/github/AlexWayfer/flame_generate_toys)
+[![Inline docs](https://inch-ci.org/github/AlexWayfer/flame_generate_toys.svg?branch=master)](https://inch-ci.org/github/AlexWayfer/flame_generate_toys)
+[![license](https://img.shields.io/github/license/AlexWayfer/flame_generate_toys.svg?style=flat-square)](https://github.com/AlexWayfer/flame_generate_toys/blob/master/LICENSE.txt)
+[![Gem](https://img.shields.io/gem/v/flame_generate_toys.svg?style=flat-square)](https://rubygems.org/gems/flame_generate_toys)
+
 Toys template to generate [Flame](https://github.com/AlexWayfer/flame)
 application entities.
 
@@ -34,13 +42,13 @@ expand FlameGenerateToys::Template, namespace: MyProject
 ## Development
 
 After checking out the repo, run `bundle install` to install dependencies.
-Then, run `bundle exec rake spec` to run the tests.
 
-To install this gem onto your local machine, run `bundle exec rake install`.
-To release a new version, update the version number in `version.rb`,
-and then run `bundle exec rake release`, which will create a git tag
-for the version, push git commits and tags, and push the `.gem` file
-to [rubygems.org](https://rubygems.org).
+Then, run `toys rspec` to run the tests.
+
+To install this gem onto your local machine, run `toys gem install`.
+
+To release a new version, run `toys gem release %version%`.
+See how it works [here](https://github.com/AlexWayfer/gem_toys#release).
 
 ## Contributing
 
