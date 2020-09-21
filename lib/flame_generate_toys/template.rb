@@ -24,6 +24,7 @@ module FlameGenerateToys
 				expand Template::Model, namespace: template.namespace
 			end
 
+			alias_tool :gen, :generate
 			alias_tool :g, :generate
 		end
 	end
