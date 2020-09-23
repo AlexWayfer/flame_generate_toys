@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+## 0.4.0 (2020-09-24)
+
+*   Update `formalism-model_forms` to another fixed version.
+
 ## 0.3.0 (2020-09-22)
 
 *   Update `formalism-model_forms` to fixed version.
