@@ -13,8 +13,6 @@ module FlameGenerateToys
 					required_arg :name
 
 					to_run do
-						require "#{context_directory}/forms/_base"
-
 						generator = initialize_generator :form, template.namespace
 
 						*modules, class_name = generator.camelized_name.split('::')
@@ -30,6 +28,8 @@ module FlameGenerateToys
 					private
 
 					def parent_form(class_name)
+						require 'formalism/model_forms'
+
 						Formalism::ModelForms.const_defined?(class_name, false) ? class_name : 'Base'
 					end
 				end
