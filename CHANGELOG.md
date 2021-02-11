@@ -2,6 +2,11 @@
 
 ## master (unreleased)
 
+## 0.7.0 (2021-02-11)
+
+*   Support Ruby 3.
+*   Update development dependencies.
+
 ## 0.6.0 (2020-10-14)
 
 *   Update `formalism-model_forms` to a new version.
