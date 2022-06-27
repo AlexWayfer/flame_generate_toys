@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
 
 	spec.add_runtime_dependency 'dry-inflector', '~> 0.2.0'
 	spec.add_runtime_dependency 'formalism-model_forms', '~> 0.8.0'
-	spec.add_runtime_dependency 'toys-core', '~> 0.12.0'
+	spec.add_runtime_dependency 'toys-core', '~> 0.13.1'
 
 	spec.add_development_dependency 'pry-byebug', '~> 3.9'
 
