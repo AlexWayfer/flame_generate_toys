@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
 
 	spec.required_ruby_version = '>= 2.6', '< 4'
 
-	spec.add_runtime_dependency 'dry-inflector', '~> 0.2.0'
+	spec.add_runtime_dependency 'dry-inflector', '~> 0.3.0'
 	spec.add_runtime_dependency 'formalism-model_forms', '~> 0.8.0'
 	spec.add_runtime_dependency 'toys-core', '~> 0.13.1'
 
@@ -48,7 +48,7 @@ Gem::Specification.new do |spec|
 	spec.add_development_dependency 'rspec', '~> 3.9'
 	spec.add_development_dependency 'simplecov', '~> 0.21.2'
 
-	spec.add_development_dependency 'rubocop', '~> 1.31.0'
+	spec.add_development_dependency 'rubocop', '~> 1.36.0'
 	spec.add_development_dependency 'rubocop-performance', '~> 1.0'
 	spec.add_development_dependency 'rubocop-rspec', '~> 2.0'
 end
