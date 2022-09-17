@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'erb'
+require 'fileutils'
 require 'gorilla_patch/inflections'
 
 module FlameGenerateToys
