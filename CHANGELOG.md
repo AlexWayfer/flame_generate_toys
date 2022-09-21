@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## 0.10.0 (2022-09-21)
+
+*   Drop Ruby 2.6 support.
+    There was the latest patch-version, also `dry-inflector` stopped to support it.
+*   Update `formalism-model_forms` to a new version.
+*   Fix error with `FileUtils` constant.
+
 ## 0.9.0 (2022-09-01)
 
 *   Add Ruby 3.1 support.
