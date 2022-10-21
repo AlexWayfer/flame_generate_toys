@@ -36,19 +36,19 @@ Gem::Specification.new do |spec|
 
 	spec.add_runtime_dependency 'dry-inflector', '~> 0.3.0'
 	spec.add_runtime_dependency 'formalism-model_forms', '~> 0.10.0'
-	spec.add_runtime_dependency 'toys-core', '~> 0.13.1'
+	spec.add_runtime_dependency 'toys-core', '~> 0.14.2'
 
 	spec.add_development_dependency 'pry-byebug', '~> 3.9'
 
 	spec.add_development_dependency 'bundler', '~> 2.0'
 	spec.add_development_dependency 'gem_toys', '~> 0.12.1'
-	spec.add_development_dependency 'toys', '~> 0.13.1'
+	spec.add_development_dependency 'toys', '~> 0.14.2'
 
 	spec.add_development_dependency 'codecov', '~> 0.6.0'
 	spec.add_development_dependency 'rspec', '~> 3.9'
 	spec.add_development_dependency 'simplecov', '~> 0.21.2'
 
-	spec.add_development_dependency 'rubocop', '~> 1.36.0'
+	spec.add_development_dependency 'rubocop', '~> 1.37.0'
 	spec.add_development_dependency 'rubocop-performance', '~> 1.0'
 	spec.add_development_dependency 'rubocop-rspec', '~> 2.0'
 end
