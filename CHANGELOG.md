@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.12.0 (2022-10-22)
+
+*   Update dependencies.
+*   Improve CI.
+
 ## 0.11.0 (2022-09-24)
 
 *   Update `formalism-model_forms` to a new version.
