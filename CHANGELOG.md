@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.13.0 (2023-02-23)
+
+*   Update `dry-inflector` to version `1.0.0`.
+*   Update development dependencies.
+
 ## 0.12.0 (2022-10-22)
 
 *   Update dependencies.
