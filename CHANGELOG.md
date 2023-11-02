@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## 0.14.0 (2023-11-02)
+
+*   Add Ruby 3.2 for CI.
+*   Update `toys` dependencies.
+*   Move development dependencies from `gemspec` into `Gemfile`.
+*   Update development dependencies.
+
 ## 0.13.0 (2023-02-23)
 
 *   Update `dry-inflector` to version `1.0.0`.
