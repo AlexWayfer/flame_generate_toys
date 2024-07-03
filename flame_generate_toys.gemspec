@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
 
 	spec.required_ruby_version = '>= 3.0', '< 4'
 
-	spec.add_runtime_dependency 'dry-inflector', '~> 1.0.0'
+	spec.add_runtime_dependency 'dry-inflector', '~> 1.1.0'
 	spec.add_runtime_dependency 'formalism-model_forms', '~> 0.10.0'
 	spec.add_runtime_dependency 'toys-core', '~> 0.15.3'
 end
