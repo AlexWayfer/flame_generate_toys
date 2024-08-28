@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 0.15.0 (2024-08-29)
+
+*   Drop Ruby 2.7 support.
+    It's EOL, even security, and new Bundler versions dropped its support.
+*   Add Ruby 3.3 for CI.
+*   Update `dry-inflector` and lock its version less strict.
+*   Rename `master` git branch to `main` in files.
+*   Update development dependencies.
+*   Resolve new RuboCop offenses.
+
 ## 0.14.0 (2023-11-02)
 
 *   Add Ruby 3.2 for CI.
