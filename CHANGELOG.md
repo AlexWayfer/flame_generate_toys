@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 0.16.0 (2025-01-06)
+
+*   Add Ruby 3.4 support.
+*   Allow `formalism-model_forms` version 0.11.
+*   Update development dependencies.
+
 ## 0.15.0 (2024-08-29)
 
 *   Drop Ruby 2.7 support.
