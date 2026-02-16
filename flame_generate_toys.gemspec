@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
 		'lib/**/*.{rb,erb}', 'README.md', 'LICENSE.txt', 'CHANGELOG.md'
 	]
 
-	spec.required_ruby_version = '>= 3.2', '< 4'
+	spec.required_ruby_version = '>= 3.2', '< 5'
 
 	spec.add_dependency 'dry-inflector', '~> 1.1'
 	spec.add_dependency 'formalism-model_forms', '~> 1.0'
