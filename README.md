@@ -1,6 +1,6 @@
 # Flame Generate Toys
 
-[![Cirrus CI - Base Branch Build Status](https://img.shields.io/cirrus/github/AlexWayfer/flame_generate_toys?style=flat-square)](https://cirrus-ci.com/github/AlexWayfer/flame_generate_toys)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AlexWayfer/flame_generate_toys/ci.yml?style=flat-square)](https://github.com/AlexWayfer/flame_generate_toys/actions)
 [![Codecov branch](https://img.shields.io/codecov/c/github/AlexWayfer/flame_generate_toys/main.svg?style=flat-square)](https://codecov.io/gh/AlexWayfer/flame_generate_toys)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/AlexWayfer/flame_generate_toys.svg?style=flat-square)](https://codeclimate.com/github/AlexWayfer/flame_generate_toys)
 [![Depfu](https://img.shields.io/depfu/AlexWayfer/benchmark_toys?style=flat-square)](https://depfu.com/repos/github/AlexWayfer/flame_generate_toys)
