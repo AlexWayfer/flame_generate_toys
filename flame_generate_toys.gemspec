@@ -36,5 +36,5 @@ Gem::Specification.new do |spec|
 
 	spec.add_dependency 'dry-inflector', '~> 1.1'
 	spec.add_dependency 'formalism-model_forms', '~> 1.0'
-	spec.add_dependency 'toys-core', '~> 0.19.0'
+	spec.add_dependency 'toys-core', '~> 0.22.0'
 end
