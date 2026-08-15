@@ -2,7 +2,7 @@
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AlexWayfer/flame_generate_toys/ci.yml?style=flat-square)](https://github.com/AlexWayfer/flame_generate_toys/actions)
 [![Codecov branch](https://img.shields.io/codecov/c/github/AlexWayfer/flame_generate_toys/main.svg?style=flat-square)](https://codecov.io/gh/AlexWayfer/flame_generate_toys)
-[![Depfu](https://img.shields.io/depfu/AlexWayfer/benchmark_toys?style=flat-square)](https://depfu.com/repos/github/AlexWayfer/flame_generate_toys)
+[![Depfu](https://img.shields.io/depfu/AlexWayfer/flame_generate_toys?style=flat-square)](https://depfu.com/repos/github/AlexWayfer/flame_generate_toys)
 [![Inline docs](https://inch-ci.org/github/AlexWayfer/flame_generate_toys.svg?branch=main)](https://inch-ci.org/github/AlexWayfer/flame_generate_toys)
 [![license](https://img.shields.io/github/license/AlexWayfer/flame_generate_toys.svg?style=flat-square)](https://github.com/AlexWayfer/flame_generate_toys/blob/main/LICENSE.txt)
 [![Gem](https://img.shields.io/gem/v/flame_generate_toys.svg?style=flat-square)](https://rubygems.org/gems/flame_generate_toys)
